@@ -1,0 +1,155 @@
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:'League spartan' , sans-serif;
+    background-color: rgb(144, 119, 218);
+    color: white;
+}
+.container{
+    width:20rem;
+}
+.container h1{
+    width:20rem;
+    font-size:larger;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+.display-container{
+    background-color:rgb(23, 15, 28);
+    position:relative;
+    border-bottom: solid 3px rgb(39, 39, 166);
+    border-radius: 10px;
+    padding-top: 0.35rem;
+}
+.display{
+    background-color:rgb(23, 15, 28);
+    font-size: large;
+    font-weight: 700;
+    color: rgb(203, 240, 129);
+    padding: 0.85rem 0.75rem;
+    padding-right: 2rem;
+    letter-spacing: 1px;
+    line-height: 25px;
+    border: none;
+}
+.display::placeholder{
+    position: absolute;
+    top: 30%;
+    left:1rem;
+    font-size: 1rem;
+    line-height: 30px;
+    color: rgb(203, 240, 129);
+    opacity: 0.70;
+}
+.copyBtn{
+    background-color:rgb(23, 15, 28);
+    position: absolute;
+    border:hidden;
+    color: white;
+    top: 40%;
+}
+.input-container{
+    background-color:rgb(23, 15, 28);
+    border-bottom: solid 3px rgb(23, 23, 107);
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 1rem;
+    
+}
+.length-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.count{
+    color:rgb(203, 240, 129);
+}
+.slider{
+    appearance: none;
+    width: 100%;
+    height: 0.65rem;
+    cursor: pointer;
+    background-color: rgb(234, 32, 234);
+    border-radius: 1rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    background-image: linear-gradient(rgb(179, 103, 179) , rgb(70, 34, 70));
+    border: none;
+}
+.slider::-webkit-slider-thumb{
+    appearance: none;
+    position: relative;
+    height: 1.3rem;
+    width: 1.3rem;
+    border-radius: 50%;
+    background-color: yellow ;
+    cursor: pointer;
+    margin-top: -2px;
+    box-shadow: 0px 0px 20px 0px rgba(255 , 229 , 61 , 0.50);
+    transition: all 100ms ease-in;
+}
+.slider:focus{
+    outline: 1px solid yellow;
+}
+.slider::-webkit-slider-thumb:hover{
+    outline: 1px solid yellow;
+    background-color: rgb(23, 21, 23);
+    box-shadow: 0px 0px 20px 3px yellow;
+}
+.genererateButton{
+    width: 18rem;
+    height: 2rem;
+    background-color: rgb(94, 94, 228);
+    border: hidden;
+    color: aliceblue;
+    font-size: small;
+    font-weight: 800;
+    border-radius: 7px;
+    border-bottom: solid 3px white;
+}
+.genererateButton:hover{
+    background-color: rgb(52, 52, 222);
+}
+
+.strength-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.indicator{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+}
+
+.check input{
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 1px solid cyan;
+    border-radius: 3.5px;
+    position: relative;
+    cursor:pointer;
+}
+.check{
+    display: flex;
+    align-items: center;
+    margin: 0.7rem 0;
+    gap: 0 0.8rem;
+}
+.check input:checked{
+    background-color: aliceblue;
+}
+.check input:checked::before{
+    content: '✔';
+    position: absolute;
+    font-size: 0.7rem;
+    font-weight: 600;
+    left: 10%;
+}
